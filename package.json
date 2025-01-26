@@ -4,7 +4,13 @@
     "backend",
     "frontend"
   ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace backend run start:dev\" \"yarn workspace frontend run dev\"",
+    "dev:backend": "yarn workspace backend run start:dev",
+    "dev:frontend": "yarn workspace frontend run dev"
+  },
   "devDependencies": {
-    "@nestjs/cli": "^11.0.2"
+    "@nestjs/cli": "^11.0.2",
+    "concurrently": "^9.1.2"
   }
 }
