@@ -11,3 +11,30 @@
 
 #!.yarn/cache
 .pnp.*
+node_modules
+
+
+# dependencies
+/node_modules/
+/yarn.lock
+/package-lock.json
+
+# environment files
+/.env
+
+# build output
+/dist/
+/build/
+
+# IDE files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# coverage
+/coverage/
